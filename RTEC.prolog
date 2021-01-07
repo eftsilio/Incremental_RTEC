@@ -115,7 +115,6 @@ DECLARATIONS:
 :- use_module(library(ordsets)).
 :- use_module(library(terms)).
 
-:- ['compiler.prolog'].
 :- ['inputModule.prolog'].
 :- ['processSimpleFluentsInc.prolog'].
 :- ['processSDFluentsInc.prolog'].
@@ -127,7 +126,7 @@ DECLARATIONS:
 :- dynamic temporalDistance/1, input/1, preProcessing/1, initTime/1.
 
 
-:- discontiguous updateSDE/4, happensAtProcessedIE/3, happensAtProcessedSDFluent/3, event/1, event2/1, inputEntity/1, index/2, secondIndex/1, outputEntity/1, simpleFluent/1, sDFluent/1, keyOfEvent/2, sDFluent2/1, dependency/2, rgraph/3, mgraph/6.
+:- discontiguous updateSDE/4, happensAtProcessedIE/3, happensAtProcessedSDFluent/3, event/1, event2/1, inputEntity/1, index/2, secondIndex/1, outputEntity/1, simpleFluent/1, sDFluent/1, keyOfEvent/2, sDFluent2/1, dependency/2, rgraph/3, mgraph/6, itIsChild/1.
 
 
 /********************************** INITIALISE RECOGNITION ***********************************/
@@ -557,7 +556,7 @@ retrieveIntervals(F=V, L) :-
 
 
 retrieveIEIntervals(Index, F=V, L) :-
-	]keyOfEvent(F=V, Key),
+	keyOfEvent(F=V, Key),
 	atomic_list_concat(['100', Key], Dkey),
 	createIndex(F=V, U),
 	checkCounter(Dkey, Dkey2),
