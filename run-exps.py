@@ -12,11 +12,7 @@ import shutil
 import string
 import csv
 import math
-import psycopg2
 import random
-import matplotlib.pyplot as plt
-import matplotlib as mpl
-import numpy as np
 import itertools
 from datetime import datetime
 import collections
