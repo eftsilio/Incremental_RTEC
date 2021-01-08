@@ -10,20 +10,16 @@ Incremental RTEC comes with ABSOLUTELY NO WARRANTY. This is free software, and y
 
 To run Incremental RTEC you need first to download the dataset of an application. In the /examples directory there are folders each one corresponding to a different application. Each application folder contains patterns and datasets for experimentation. In the data/dynamic_data directory of each application you can find instructions for downloading a dataset. For now, we provide only the data for the application "maritime_brest".
 
-After you have downloaded a dataset you can run Incremental RTEC from the command line. Assuming that you have downloaded the datasets for the application "maritime_brest", please type in the command line:
+After you have downloaded a dataset you can run Incremental RTEC from the command line using the *run-exps.py* file. You will need to have installed Python3 in your system. Assuming that you have downloaded the datasets for the application "maritime_brest", please type in the command line:
 
+```python
+$ python3 run-exps.py
 ```
-$ yap -s 0 -h 0 -t 0 -l './examples/maritime_brest/data/loadFiles.prolog' -g "performFullER(['./examples/maritime_brest/data/dynamic_data/gamma_delayed_5%.csv'],'./examples/maritime_brest/data/results/stats.txt', './examples/maritime_brest/data/results/CEs.txt', 1443650401, 7200, 3600, 1459461590), halt."
-```
 
-Next, we explain the arguments given in the above command.
+and then follow the on-screen instructions in order to select the desired parameters for recognition. When recognition finishes, the produced composite events and various statistics concerning recognition will be saved in the *data/results* directory of the application. If the directory does not exist, it will be created.
 
-- *'./examples/maritime_brest/data/loadFiles.prolog'* is a prolog file that loads all the necesary files for the execution of Incremental RTEC. It can be found in each application folder under the *data* directory.
-- Arguments of *performFullER* predicate:
-    - *['./examples/maritime_brest/data/dynamic_data/gamma_delayed_5%.csv']* is the path to the dataset.
-    - *'./examples/maritime_brest/data/results/stats.txt'* is the path where the file with various statistics concerning recognition will be saved. In each application folder you can find a *data/results* directory for saving the results of the experiments.
-    - *'./examples/maritime_brest/data/results/CEs.txt'* is the path where the file with the produced composite events will be saved. In each application folder you can find a *data/results* directory for saving the results of the experiments.
-    - *1443650401* is the starting time of the recognition. In each application folder there is an *instructions* file where the start and end time for the specific application are documented.
-    - *7200* is the size of the sliding window.
-    - *3600* is the size of the sliding step.
-    - *1459461590* is the ending time of the recognition.
+# Documentation
+
+- Tsilionis E., Artikis A. and Paliouras G., [Incremental Event Calculus for Run-Time Reasoning](http://cer.iit.demokritos.gr/publications/papers/2019/EfthimisTsilionis.pdf). In 13th International Conference on Distributed and Event-Based Systems (DEBS), pp. 79–90, 2019.
+- Tsilionis E., Koutroumanis N., Nikitopoulos P., Doulkeridis C. and Artikis A., [Online Event Recognition from Moving Vehicles](http://cer.iit.demokritos.gr/publications/papers/2019/Tsilionis_ICLP19.pdf). In Theory and Practice of Logic Programming (TPLP), 19(5-6), pp. 841–856, 2019. 
+

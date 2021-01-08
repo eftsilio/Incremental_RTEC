@@ -141,6 +141,7 @@ if __name__ == "__main__":
 		if args['app'] != 'i':
 			print('Please select the percentage of the delayed events. The available choices are 5, 10, 20, 40, 80.\n'
 			'If you want to run experiments with more than one delay percentage, please seperate your choices with space.\n'
+			'For example, type: 5 10 40\n'
 			'If you want to run experiments with all the available delays, just type a.\n')
 
 			while True:
@@ -163,7 +164,8 @@ if __name__ == "__main__":
 		else:
 			args['data'] = inc_RTEC_data_files
 
-		print('Please type the size of the window in seconds. If you want to run experiments with more than one window sizes, please seperate them with space.\n')
+		print('Please type the size of the window in seconds. If you want to run experiments with more than one window sizes, please seperate them with space.\n'
+		'For example, type: 3600 7200 14400\n')
 
 		while True:
 			w = set(input().split(' '))
@@ -175,7 +177,8 @@ if __name__ == "__main__":
 				print('The window size must be a number. Please try again.\n')
 				continue
 
-		print('Please type the size of the sliding step in seconds. The sliding step must be smaller or equal to the smaller window.\n')
+		print('Please type the size of the sliding step in seconds. The sliding step must be smaller or equal to the smaller window.\n'
+		'For example, type: 3600\n')
 
 		while True:
 			step = input()
