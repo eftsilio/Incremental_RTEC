@@ -8,7 +8,7 @@ Incremental RTEC comes with ABSOLUTELY NO WARRANTY. This is free software, and y
 
 # File Description
 
-To run Incremental RTEC you need first to download the dataset of an application. In the /examples directory there are folders each one corresponding to a different application. Each application folder contains patterns and datasets for experimentation. In the data/dynamic_data directory of each application you can find instructions for downloading a dataset. For now, we provide only the data for the application "maritime_brest".
+To run Incremental RTEC you need first to download the dataset of an application. In the /examples directory there are folders each one corresponding to a different application. Each application folder contains patterns and datasets for experimentation as well as a readme file. In the data/dynamic_data directory of each application you can find instructions for downloading a dataset. For now, we provide only the data for the application "maritime_brest".
 
 After you have downloaded a dataset you can run Incremental RTEC from the command line using the *run-exps.py* file. You will need to have installed Python3 in your system. Assuming that you have downloaded the datasets for the application "maritime_brest", please type in the command line:
 
