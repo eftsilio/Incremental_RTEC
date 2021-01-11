@@ -1,29 +1,22 @@
 from os import sys, path
-
-import sys
 from multiprocessing import Process
 from os import listdir
 from os.path import isfile, join, exists
 import argparse
-import subprocess, os, time, re
+import subprocess, os, time
 from time import sleep
 import timeit
 import shutil
-import string
 import csv
 import math
-import random
-import itertools
 from datetime import datetime
-import collections
-from itertools import islice
 
 
 convert = lambda text: int(text) if text.isdigit() else text
 alphanum_key = lambda key: [ convert(c) for c in re.split('([0-9]+)', key) ]
 
 examples = {'b': 'maritime_brest', 'i': 'maritime_imis', 'f': 'fleet_management'}
-times = {'b': [1443650401, 1459461590], 'i': [1451606401, 1454284790], 'f': [1530399600, 1543622400]}
+times = {'b': [1443650401, 1459461590], 'i': [1451606401, 1454284790], 'f': [1530399600, 1533705300]}
 
 
 def main(args):

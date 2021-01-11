@@ -21,5 +21,10 @@ and then follow the on-screen instructions in order to select the desired parame
 # Documentation
 
 - Tsilionis E., Artikis A. and Paliouras G., [Incremental Event Calculus for Run-Time Reasoning](http://cer.iit.demokritos.gr/publications/papers/2019/EfthimisTsilionis.pdf). In 13th International Conference on Distributed and Event-Based Systems (DEBS), pp. 79–90, 2019.
-- Tsilionis E., Koutroumanis N., Nikitopoulos P., Doulkeridis C. and Artikis A., [Online Event Recognition from Moving Vehicles](http://cer.iit.demokritos.gr/publications/papers/2019/Tsilionis_ICLP19.pdf). In Theory and Practice of Logic Programming (TPLP), 19(5-6), pp. 841–856, 2019. 
+- Tsilionis E., Koutroumanis N., Nikitopoulos P., Doulkeridis C. and Artikis A., [Online Event Recognition from Moving Vehicles](http://cer.iit.demokritos.gr/publications/papers/2019/Tsilionis_ICLP19.pdf). In Theory and Practice of Logic Programming (TPLP), 19(5-6), pp. 841–856, 2019.
 
+# Related Software
+- [OLED](https://github.com/nkatzz/OLED): Online Learning of Event Definitions. OLED is a supervised machine learning tool for constructing Event Calculus rules, such as complex event patterns, from annotated data streams.
+- [LoMRF](https://github.com/anskarl/LoMRF):  Library for Markov Logic Networks. LoMRF supports Event Calculus reasoning and learning under uncertainty.
+- [oPIEC](https://github.com/Periklismant/oPIEC): Online Probabilistic Interval-Based Event Calculus. oPIEC supports Event Calculus reasoning over data streams under uncertainty.
+- [Wayeb](https://github.com/ElAlev/Wayeb): Wayeb is a Complex Event Processing and Forecasting (CEP/F) engine written in Scala. It is based on symbolic automata and Markov models.
