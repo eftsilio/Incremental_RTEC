@@ -3,7 +3,7 @@ from multiprocessing import Process
 from os import listdir
 from os.path import isfile, join, exists
 import argparse
-import subprocess, os, time
+import subprocess, os, time, re
 from time import sleep
 import timeit
 import shutil
@@ -151,6 +151,7 @@ if __name__ == "__main__":
 					break
 
 		else:
+			args['delays'] = ['imis']
 			args['data'] = inc_RTEC_data_files
 
 		print('Please type the size of the window in seconds. If you want to run experiments with more than one window sizes, please seperate them with space.\n'
