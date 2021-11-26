@@ -98,7 +98,7 @@ keepOverlappingPoints([(S,L)|Rest], InitTime, [(S,L)|Rest]) :-
 	geq(S, InitTime), !.
 
 keepOverlappingPoints([(_S,_L)|Rest], InitTime, FinalList) :-
-	keepOverlappingPoints2(Rest, InitTime, FinalList).
+	keepOverlappingPoints(Rest, InitTime, FinalList).
     
 
 % takes the union of two multisets.
